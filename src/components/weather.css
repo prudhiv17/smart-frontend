@@ -1,0 +1,48 @@
+.weather-widget {
+    max-width: 300px;
+    background-color: #4a90e2; /* Background color of the widget */
+    color: white; /* Text color */
+    border-radius: 15px; /* Rounded corners */
+    padding: 20px; /* Padding inside the widget */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    font-family: 'Arial', sans-serif; /* Font style */
+    text-align: center; /* Center-align the text */
+  }
+  
+  .weather-widget h3 {
+    font-size: 1.5rem; /* Heading size */
+    margin-bottom: 15px; /* Space below the heading */
+  }
+  
+  .weather-widget p {
+    font-size: 1.2rem; /* Paragraph text size */
+    margin: 10px 0; /* Space between paragraphs */
+  }
+  
+  .weather-widget .location {
+    font-weight: bold; /* Make the location name bold */
+    font-size: 1.3rem; /* Increase the font size */
+  }
+  
+  .weather-widget .temperature {
+    font-size: 2.5rem; /* Make the temperature larger */
+    font-weight: bold; /* Bold temperature */
+    margin: 10px 0; /* Margin around temperature */
+  }
+  
+  .weather-widget .condition {
+    text-transform: capitalize; /* Capitalize the first letter of the condition */
+    font-style: italic; /* Italicize the weather condition */
+  }
+  
+  .weather-widget .icon {
+    width: 60px; /* Size of the weather icon */
+    margin: 10px 0; /* Margin around the icon */
+  }
+  
+  .weather-widget .footer {
+    font-size: 0.9rem; /* Small footer text */
+    margin-top: 20px; /* Margin above the footer */
+    opacity: 0.7; /* Slightly faded text */
+  }
+  

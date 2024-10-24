@@ -1,0 +1,89 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper {
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    margin: auto;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #3f51b5;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.form {
+    text-align: center;
+}
+
+.button-select-file, .upload-button {
+    margin-bottom: 16px;
+    background-color: #3f51b5;
+    color: white;
+    font-weight: bold;
+}
+
+.button-select-file:hover, .upload-button:hover {
+    background-color: #303f9f;
+}
+
+.card {
+    max-width: 345px;
+    margin: 16px auto 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-media {
+    height: 140px;
+    border-radius: 15px 15px 0 0;
+}
+
+.result-box {
+    margin-top: 32px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.divider {
+    margin-bottom: 16px;
+    background-color: #3f51b5;
+}
+
+.causes-heading, .treatments-heading {
+    margin-top: 16px;
+    color: #3f51b5;
+    font-weight: bold;
+}
+
+li {
+    text-align: left;
+    margin: 5px 0;
+    color: #333;
+}
+
+

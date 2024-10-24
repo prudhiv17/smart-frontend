@@ -1,0 +1,170 @@
+/* General Styles */
+/* General Styles */
+.crop {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(to right, #d8d8d6,#d8d8d6); 
+    /* Linear gradient from gray on the left to black on the right */
+}
+
+
+
+/* Header Container */
+.header-container {
+    width: 100%;
+    position: fixed; /* Fix the header at the top */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Ensure it stays on top of other content */
+    background: linear-gradient(to right, #d8d8d6, #000000); 
+    box-shadow: 0px 4px 8px rgba(29, 28, 28, 0.904); /* Slightly more pronounced shadow */
+    border-bottom: 1px solid #ddd; /* Add a border for subtle separation */
+    display: flex;
+    justify-content: space-between; /* Distribute space between left and right sections */
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff; /* White text color for contrast */
+    
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between; /* Distribute space between left and right sections */
+    align-items: center;
+    padding: 10px 20px;
+    color: #fff; /* White text color for contrast */
+    background: black; /* Make background transparent to show the gradient */
+}
+
+.header-left h1 {
+    margin: 0 20px; /* Balanced margin around the title */
+    font-weight: bold; /* Make the title bold */
+    font-size: 24px; /* Increase font size for prominence */
+    color: #fff; /* White color for better readability */
+}
+
+/* Header Right Buttons */
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.header-right button {
+    background: none;
+    border: none; /* Remove border */
+    color: #f0f0f0; /* Light gray color for the button text to match the background */
+    margin-right: 20px; /* Adjust spacing between buttons */
+    cursor: pointer;
+    font-size: 16px;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth color transition on hover */
+    padding: 8px 16px; /* Add some padding for a better button look */
+    border-radius: 4px; /* Slightly rounded corners */
+}
+
+.header-right button:hover {
+    color: #000000; /* Change text color to black on hover for better contrast */
+    background-color: #f0f0f0; /* Light gray background color on hover */
+}
+
+.profile-icon {
+    width: 45px; /* Slightly larger profile icon */
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid #add8e6; /* Add a border matching the button color */
+    object-fit: cover; /* Ensure the image fits well */
+    cursor: pointer;
+    transition: transform 0.3s ease, border-color 0.3s ease; /* Smooth scaling and border color transition on hover */
+}
+
+.profile-icon:hover {
+    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    border-color: #87ceeb; /* Change border color on hover */
+}
+
+/* Form Container */
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px; /* Margin to push content below the fixed header */
+}
+
+/* CropPredictor Styles */
+.CropPredictor {
+    background: linear-gradient(135deg, #e0f7fa, #88db99); /* Light, visually appealing gradient background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px; /* Adjust max-width as needed */
+}
+
+.CropPredictor h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.CropPredictor form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between input fields */
+    justify-content: center;
+}
+
+.CropPredictor .inputGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    width: calc(50% - 15px); /* Two inputs per row with gap space */
+}
+
+.CropPredictor label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.CropPredictor input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.CropPredictor button {
+    background: #c2c818;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    width: 100%; /* Ensure button takes full width */
+    margin-top: 15px; /* Space above the button */
+    text-align: center; /* Center-align text inside the button */
+}
+
+.CropPredictor button:hover {
+    background: #ff6347;
+}
+
+.CropPredictor h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+/* Prediction Container */
+.prediction-container {
+    margin-top: 20px;
+    text-align: center; /* Center-align text */
+}
