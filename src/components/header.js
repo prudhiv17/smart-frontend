@@ -69,10 +69,10 @@ const Header = () => {
                     alt="Logo" 
                     className="logo" 
                 />
-                <h1 className="home-title" onClick={handleHomeClick}>Home</h1> {/* Home text added */}
+                {/* Home text removed */}
             </div>
             <div className="header-right">
-                <button onClick={handleHomeClick} className="home-button">Home</button> {/* Home button added here */}
+                <button onClick={handleHomeClick} className="home-button">Home</button>
                 <button onClick={handleAboutUsClick}>Who Are We</button>
                 <button>My Profile</button>
                 {loading && <span>Loading weather...</span>}
