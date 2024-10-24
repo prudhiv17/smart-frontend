@@ -2,12 +2,12 @@ import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import aboutUsBackgroundImage from '../assets/aboutus.jpg'; 
 import { FaFacebookF, FaTwitter, FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import Header from './header'; // Adjust the import path as needed
 
 const borderAnimation = keyframes`
   0% {
     border-image-source: linear-gradient(90deg, red, yellow, green);
   }
-  
   
   100% {
     border-image-source: linear-gradient(90deg, yellow, green, red);
@@ -25,6 +25,7 @@ const AboutUsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; /* Allow vertical stacking */
 `;
 
 const AboutUsContent = styled.div`
@@ -74,35 +75,38 @@ const SocialMediaIcon = styled.a`
 
 const AboutUs = () => {
   return (
-    <AboutUsContainer>
-      <AboutUsContent>
-        <AboutUsHeader>About Us</AboutUsHeader>
-        <AboutUsParagraph>
-          Welcome to Precision Agriculture, where technology meets tradition to revolutionize farming practices. Our mission is to provide innovative solutions that help farmers make informed decisions, enhance crop yields, and sustain the environment.
-        </AboutUsParagraph>
-        <AboutUsParagraph>
-          Our platform integrates advanced tools for disease detection, crop recommendation, and fertilizer calculation, ensuring that farmers receive the best advice tailored to their specific needs. We strive to bridge the gap between technology and agriculture, making modern farming more accessible and efficient.
-        </AboutUsParagraph>
-        <AboutUsParagraph>
-          Founded by a team of experts in agriculture and technology, Precision Agriculture is committed to improving farming practices and increasing productivity. Join us on our journey to make agriculture smarter, more sustainable, and profitable.
-        </AboutUsParagraph>
-      </AboutUsContent>
+    <>
+      <Header /> {/* Render Header separately */}
+      <AboutUsContainer>
+        <AboutUsContent>
+          <AboutUsHeader>About Us</AboutUsHeader>
+          <AboutUsParagraph>
+            Welcome to Precision Agriculture, where technology meets tradition to revolutionize farming practices. Our mission is to provide innovative solutions that help farmers make informed decisions, enhance crop yields, and sustain the environment.
+          </AboutUsParagraph>
+          <AboutUsParagraph>
+            Our platform integrates advanced tools for disease detection, crop recommendation, and fertilizer calculation, ensuring that farmers receive the best advice tailored to their specific needs. We strive to bridge the gap between technology and agriculture, making modern farming more accessible and efficient.
+          </AboutUsParagraph>
+          <AboutUsParagraph>
+            Founded by a team of experts in agriculture and technology, Precision Agriculture is committed to improving farming practices and increasing productivity. Join us on our journey to make agriculture smarter, more sustainable, and profitable.
+          </AboutUsParagraph>
+        </AboutUsContent>
 
-      <SocialMediaContainer>
-        <SocialMediaIcon href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-          <FaFacebookF />
-        </SocialMediaIcon>
-        <SocialMediaIcon href="https://twitter.com" target="_blank" aria-label="Twitter">
-          <FaTwitter />
-        </SocialMediaIcon>
-        <SocialMediaIcon href="https://wa.me/" target="_blank" aria-label="WhatsApp">
-          <FaWhatsapp />
-        </SocialMediaIcon>
-        <SocialMediaIcon href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-          <FaInstagram />
-        </SocialMediaIcon>
-      </SocialMediaContainer>
-    </AboutUsContainer>
+        <SocialMediaContainer>
+          <SocialMediaIcon href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+            <FaFacebookF />
+          </SocialMediaIcon>
+          <SocialMediaIcon href="https://twitter.com" target="_blank" aria-label="Twitter">
+            <FaTwitter />
+          </SocialMediaIcon>
+          <SocialMediaIcon href="https://wa.me/" target="_blank" aria-label="WhatsApp">
+            <FaWhatsapp />
+          </SocialMediaIcon>
+          <SocialMediaIcon href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+            <FaInstagram />
+          </SocialMediaIcon>
+        </SocialMediaContainer>
+      </AboutUsContainer>
+    </>
   );
 };
 
